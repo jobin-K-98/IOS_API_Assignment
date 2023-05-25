@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="API_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJE-21-3en">
+                                <rect key="frame" x="50" y="459" width="293" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="FruityVice API"/>
+                                <connections>
+                                    <action selector="FruityVice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4TG-Pa-73N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ty0-El-xaB">
+                                <rect key="frame" x="50" y="324" width="293" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="VechileFact API"/>
+                                <connections>
+                                    <action selector="AnimeFact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Srs-Ja-aEv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znH-JN-jdt">
+                                <rect key="frame" x="50" y="594" width="293" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Vehicle Parts API"/>
+                                <connections>
+                                    <action selector="FruityVice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zfS-5A-ye6"/>
+                                    <action selector="VehiclePart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zYB-dR-Kb4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="znH-JN-jdt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="3xm-li-fsM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="znH-JN-jdt" secondAttribute="trailing" constant="50" id="5Hz-C0-U8v"/>
+                            <constraint firstItem="uJE-21-3en" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="5ih-36-a5G"/>
+                            <constraint firstItem="Ty0-El-xaB" firstAttribute="leading" secondItem="uJE-21-3en" secondAttribute="leading" id="8wv-Ol-Wog"/>
+                            <constraint firstItem="uJE-21-3en" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="93D-7D-eHP"/>
+                            <constraint firstItem="znH-JN-jdt" firstAttribute="top" secondItem="uJE-21-3en" secondAttribute="bottom" constant="100" id="OzE-KJ-JqI"/>
+                            <constraint firstItem="znH-JN-jdt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qfp-6h-Jb3"/>
+                            <constraint firstItem="uJE-21-3en" firstAttribute="top" secondItem="Ty0-El-xaB" secondAttribute="bottom" constant="100" id="YNL-XL-k5B"/>
+                            <constraint firstItem="uJE-21-3en" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="400" id="lcv-cu-1Nu"/>
+                            <constraint firstItem="Ty0-El-xaB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vAr-2r-FWR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uJE-21-3en" secondAttribute="trailing" constant="50" id="yZ2-Ht-ZF4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="66" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
